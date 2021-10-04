@@ -1,10 +1,11 @@
 c=gcc
 all:
-	gcc one.c -o client.o 
-	./client.o
+	#gcc one.c -o client.o 
+	#./client.o
 	@echo "================================================================="
 	g++ main.cpp -o aaa.o 
 	./aaa.o 
-
+	@echo "================================================================="
+	
 clean: 
 	rm -rf *.o
