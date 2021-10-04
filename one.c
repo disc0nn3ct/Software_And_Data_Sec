@@ -24,7 +24,7 @@ int main()
 
 
 	fgets (buf.text, sizeof(buf.text), f);
-	printf("%s",buf.text);
+	// printf("%s",buf.text);
 	pclose (f);
 
 	int fd = msgget(111, IPC_CREAT | 0666 );
