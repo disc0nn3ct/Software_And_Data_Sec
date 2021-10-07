@@ -11,25 +11,28 @@
 
 struct msgbuf {
 long mtype;
-char text[MSGMAX];
+char mtext[MSGMAX];
 };
 
 int main() 
 {
-	char cmd[]= "date | cut -d ' ' -f 1-4 | md5sum | cut -d ' ' -f 1 ";
+	char cmd[]= "date | cut -d ' ' -f 1-4 | md5sum | cut -d ' ' -f 1 | awk '{print $NF}'";
+	// char cmd[]="date";
+
 	FILE *f= popen (cmd, "r");
 
 	struct msgbuf buf;
 	buf.mtype = 16;
 
 
-	fgets (buf.text, sizeof(buf.text), f);
-	// printf("%s",buf.text);
+	fgets (buf.mtext, sizeof(buf.mtext), f);
+
+	printf("%s",buf.mtext);
 	pclose (f);
 
 	int fd = msgget(111, IPC_CREAT | 0666 );
 	
-	if (fd == -1 || msgsnd(fd, &buf, strlen(buf.text)+1, IPC_NOWAIT) == -1 )
+	if (fd == -1 || msgsnd(fd, &buf, strlen(buf.mtext)+1, IPC_NOWAIT) == -1 )
 		perror("Ошибка сообщения"); 
 	
 

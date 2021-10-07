@@ -1,7 +1,7 @@
 c=gcc
 all:
-	g++ main.cpp -o aaa.o 
-	./aaa.o 
+	g++ main.cpp -o main.o 
+	./main.o 
 	
 clean: 
 	rm -rf *.o
