@@ -11,8 +11,8 @@ g++ main.cpp -o main.o
 strip main.o
 ./main.o
 ```
-[Код](https://github.com/disc0nn3ct/Software_And_Data_Sec/blob/c63160f48a3d3cd2e223553042985c9dad6e5399/main.cpp) Код без обфускации 
-[Код подпрограммы](https://github.com/disc0nn3ct/Software_And_Data_Sec/blob/main/not%20necessary/one.c) Код подпрограммы в программе
+[Код](https://github.com/disc0nn3ct/Software_And_Data_Sec/blob/c63160f48a3d3cd2e223553042985c9dad6e5399/main.cpp) без обфускации 
+[Код](https://github.com/disc0nn3ct/Software_And_Data_Sec/blob/main/not%20necessary/one.c) подпрограммы в программе
 [Код с обфускацией](https://github.com/disc0nn3ct/Software_And_Data_Sec/blob/main/main.cpp)  
 
 
