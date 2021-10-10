@@ -53,6 +53,7 @@ ___
 
 Также используется проверка на подключенный дебаггер[1].
 
+Есть реализация [полного итогого кода](https://github.com/disc0nn3ct/Software_And_Data_Sec/blob/main/src/main_pricol.cpp) в 1 строку. 
 
 
 Литература: 
