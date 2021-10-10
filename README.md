@@ -2,13 +2,13 @@
 
 Запустить можно через: 
 ```shell
-		make
+make
 ```
 
 Либо через:
 ```shell 
-	g++ main.cpp -o main.o
-	./main.o
+g++ main.cpp -o main.o
+./main.o
 ```
 
 
