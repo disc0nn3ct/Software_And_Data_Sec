@@ -1,2 +1,15 @@
-# Software_And_Data_Sec
-Subject at the institute "Software protection"
+#Защита программ и данных 
+
+Запустить можно через: 
+```shell
+		make
+```
+
+Либо через:
+```shell 
+	g++ main.cpp -o main.o
+	./main.o
+```
+
+
+

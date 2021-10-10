@@ -3,7 +3,6 @@
 #include <string.h> // для strlen
 #include <stdlib.h>
 
-// #include <sys/ipc.h>
 
 #ifndef MSGMAX
 #define MSGMAX 1024
@@ -17,8 +16,6 @@ char mtext[MSGMAX];
 int main() 
 {
 	char cmd[]= "date | cut -d ' ' -f 1-4 | md5sum | cut -d ' ' -f 1 | awk '{print $NF}'";
-	// char cmd[]="date";
-
 	FILE *f= popen (cmd, "r");
 
 	struct msgbuf buf;
@@ -33,11 +30,6 @@ int main()
 	int fd = msgget(111, IPC_CREAT | 0666 );
 	
 	if (fd == -1 || msgsnd(fd, &buf, strlen(buf.mtext)+1, IPC_NOWAIT) == -1 )
-		perror("Ошибка сообщения"); 
-	
-
-	// msgctl(fd, IPC_RMID, 0 );
-	// printf("%s",buf.text);
-
+		perror("Ошибка сообщения"); 	
 	return 0;
 }

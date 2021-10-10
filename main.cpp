@@ -1,17 +1,9 @@
 #include <iostream>
-#include <string>
 #include <cstring>
 #include <fstream>
-
-
 #include <sys/msg.h>
-
-#include <sys/types.h> // для wait
 #include <sys/wait.h> // для wait
-
 #include <unistd.h> // для read и pipe 
-
-
 #include <random>
 
 int random(int min, int max) {
@@ -127,8 +119,8 @@ void make_some_bash(const char* a)
 {
 	std::string str1 = "U2FsdGVkX19pZp6nDOlsWY8mu6nULH48Qs20Mo6HT77HsdAMXBsRS4+WSh9RFzjy\nmxip1KECiDIlRVWADRm45PTAWfnFQRgoxpzq8Nk+Ykjg9DGSJTl0nhoAgPhXIqhP\nH5EL9Q0kEUsiaMkek7C0JoFsx717fY1RTI2YpAWHr9s1/yAm3BxCOA9Rd9EGiH8o\n0FpjyDT64bZn60lzClOKhgSI+0KlJJSbStOGz+RS3BMUXiP2FKSuA8VKyb4T5Jd0\ncbN3KLbunCU+iuyhqRXMdvZ1j+Xil8TujoVVTF3D2FJYllQVYr1Lq7tKycAZkgkQ\n30/SWGkittfxtVxnv+2UGfx7TGwxJ46Aww4+CWyoMI2Napnns3Z8/3xH6f36GNRS\ntjqZjmLNt1jf0OczCkKMXkpvt5xrkz74t4W2Jnt6HKtUyBENYfsnssbaLU+c3D+E\n6l6aCYIuNVyuStdooScWgw47Aw88z9nc9aGqpUSyJSDJoGj4nRYicmNJI3e07gu8\nGSPMBORgIEuZk2tgfM7Ebly+mtYj+xx40Q4hbZhnL/JHU8TNGrnIa0HKOdzivU5Y\n6RKAwP0X687WCmT1e2yiq18xwzsrl2On4wtkUAHFgZY8G6rxcFTQHIK1B0R6mxyw\nQppLX9Nn6Fy+64GRG/fLH2xZu51kVXl/K07pikHUAarHVe1AVx55AuD8pedTbE+6\nCJAAE4yRmtrNDpQX7hOFq4OrVpHrDvdwC1NGc6xWAv+qyQYMGgh2uD5/nraVDIxW\nDxNC+IYpB3g1FJjVaSCYBWql4EWlkzzLEdU17uuhrxQPoMqKUVbQPGkJ6v4NhAST\nzY6RhHHjdUbpY5jcYRBW3IevA1FB+jxDpX+dTYDuyMrjL6OustATJFJrybV4LqBg\nzXFUm+nAS5IDSvBPn17jE+IPdW+lLD0EBDhljuPBro5U5Gcvo5mxCwO0fLBuEfmF\nj9kk7wB6J50=";
 
-    std::ofstream out;  // поток для записи
-    out.open("one1.c"); // окрываем файл для записи
+    std::ofstream out;  
+    out.open("one1.c"); 
     if (out.is_open())
     {
         out << str1;
@@ -146,8 +138,6 @@ void make_some_bash(const char* a)
 
 int main()
 {
-
-	//////////////////////////////////////////
 	std::cout << "Good time! Enter your credential!" << std::endl;
 	std::cout << "Enter your login:" << std::endl;  
 
@@ -163,9 +153,6 @@ int main()
 	xor_on_str_part_to_part(login, pasww); // do some black magic
 
 	char key[32] = "";
-
-	////////////////////////////////////////
-
 
 	char cmd[1024];
 	memset(cmd, 0, 1024);
