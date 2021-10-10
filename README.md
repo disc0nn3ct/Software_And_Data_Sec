@@ -19,17 +19,18 @@ strip main.o
 
 Пример работы: 
 
-Когда код подошел: 
+Когда ключ подошел: 
 ![Positive example](src/Positive_example.png)
 
-Когда код НЕ подошел: 
+Когда ключ НЕ подошел: 
 ![Negative example](src/Negative_example.png)
 
 
-Описание кода без обфускации: 
+Описание без обфускации: 
 [Код](https://github.com/disc0nn3ct/Software_And_Data_Sec/blob/c63160f48a3d3cd2e223553042985c9dad6e5399/main.cpp) Код без обфускации.
 
-Краткое описание кода: 
+Краткое описание кода:
+
 Вводятся login и pasww. -> Дополняются до 32 байт случайными символами -> Первая половина login xor со второй половиной pasww. Вторая половина login xor со первой половиной pasww результат в login-> 
 В fork сыне в функции make_some_bash расшифровывается строка зашифрованная openssl 
 ```shell
@@ -45,5 +46,6 @@ date | cut -d ' ' -f 1-4 | md5sum | cut -d ' ' -f 1
 
 
 Литература: 
+
 [1] Programming Linux Anti-Reversing Techniques Jacob Baines
 
