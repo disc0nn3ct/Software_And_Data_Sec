@@ -1,5 +1,13 @@
 # Защита программ и данных 
 
+Требуется **openssl** обычно она уже стоит на Ubuntu 
+```shell
+sudo apt update
+sudo apt install openssl
+```
+
+
+
 Запустить можно через: 
 ```shell
 make
