@@ -31,9 +31,11 @@ strip main.o
 Пример работы: 
 
 Когда ключ подошел: 
+
 ![Positive example](src/Positive_example.png)
 
 Когда ключ НЕ подошел: 
+
 ![Negative example](src/Negative_example.png)
 
 
