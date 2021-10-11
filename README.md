@@ -1,6 +1,8 @@
 # Защита программ и данных 
 
-Требуется **openssl** обычно она уже стоит на Ubuntu 
+Требуется **openssl**! Обычно он уже стоит на Ubuntu 20.04+ 
+
+Для установки:
 ```shell
 sudo apt update
 sudo apt install openssl
